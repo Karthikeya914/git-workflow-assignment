@@ -1,0 +1,47 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION - WORKFLOW ASSIGNMENT
+================================================================================
+
+1. git init -b main
+   Initializes a new Git repository in the current directory and sets the default 
+   branch name to 'main'.
+
+2. git status
+   Displays the state of the working directory and staging area, showing which files 
+   are untracked, staged, or modified.
+
+3. git add <file>
+   Adds specified file(s) or changes from the working directory to the Git staging 
+   area in preparation for a commit.
+
+4. git commit -m "<message>"
+   Records staged snapshots permanently into the repository history with an informative 
+   commit message describing the changes.
+
+5. git branch <branch-name>
+   Creates a new branch pointer pointing to the current commit without automatically 
+   switching to it.
+
+6. git checkout <branch-name>  (or git switch <branch-name>)
+   Switches the working directory and HEAD pointer to the specified branch.
+
+7. git merge <branch-name> --no-ff -m "<message>"
+   Integrates changes from the specified branch into the current branch, creating an 
+   explicit merge commit to preserve branch topology.
+
+8. git log --graph --oneline --decorate --all
+   Displays the commit history visually as an ASCII graph, with one line per commit, 
+   branch refs, and commit hashes across all branches.
+
+9. git reset HEAD~1
+   Undoes the most recent commit on the current branch while leaving the modified files 
+   safe in the working directory (unstaged).
+
+10. git remote add origin <url>
+    Links the local repository to a remote server (such as GitHub) under the standard 
+    remote alias 'origin'.
+
+11. git push -u origin main
+    Uploads the local 'main' branch commits to the remote GitHub repository and sets 
+    'origin/main' as the upstream tracking reference.
+================================================================================
